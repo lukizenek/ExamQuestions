@@ -4,5 +4,7 @@
 	<classpathentry kind="src" path="Q1"/>
 	<classpathentry kind="src" path="Q2"/>
 	<classpathentry kind="src" path="Q3"/>
+	<classpathentry kind="src" path="Q4"/>
+	<classpathentry kind="src" path="Q5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -8,7 +8,7 @@ public abstract void deposit(double amount, Date depositedDate);
 
 public double calculateBalance() {
 	double balance = 0;
-	for(int i = 0; i <= deposits.size(); i++) {
+	for(int i = 0; i < deposits.size(); i++) {
 		balance += deposits.get(i).getAmount();
 	}
 	return balance;

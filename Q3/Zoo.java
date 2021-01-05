@@ -9,6 +9,12 @@ public class Zoo {
 	public void addAnimal(Animal animal) {
 		animals.add(animal);
 	}
+	public void removeAnimal(int index) {
+		animals.remove(index);
+	}
+	public Animal getAnimal(int index) {
+		return animals.get(index);
+	}
 	
 
 }

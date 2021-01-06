@@ -6,13 +6,13 @@ public class Student extends Person{
 	public String adressedAsName() {
 		switch(yearInCollage) {
 		case 1:
-			return "Freshman: " + super.getFirstname() + " " + super.getLastname();
+			return "Freshman: " + getFirstname() + " " + getLastname();
 		case 2:
-			return "Sophomore: " + super.getFirstname() + " " + super.getLastname();
+			return "Sophomore: " + getFirstname() + " " + getLastname();
 		case 3:
-			return "Junior: " + super.getFirstname() + " " + super.getLastname();
+			return "Junior: " + getFirstname() + " " + getLastname();
 		case 4:
-			return "Senior: " + super.getFirstname() + " " + super.getLastname();
+			return "Senior: " + getFirstname() + " " + getLastname();
 		default:
 			return "error";
 		}

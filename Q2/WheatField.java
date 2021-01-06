@@ -6,10 +6,12 @@ public class WheatField extends GrainField {
 		switch(WheatType) {
 		case "common":
 			tY = 8 * getSizeInSqMeters();
-			return tY;
+			break;
 		case "spelt":
 			tY = 7 * getSizeInSqMeters();
-			return tY;
+			break;
+		default:
+			System.out.print("Error");
 		}
 		return tY;
 			

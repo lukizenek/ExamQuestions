@@ -9,7 +9,7 @@ public class CreditCard {
 	}
 	
 	public CreditCard copy() {
-		return new CreditCard(number, validTo);
+		return new CreditCard(this.number, this.validTo);
 	}
 	
 

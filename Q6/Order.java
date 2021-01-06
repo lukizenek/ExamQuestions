@@ -15,6 +15,9 @@ public abstract class Order {
 	public Date getOrderPlaced() {
 		return orderPlaced;
 	}
-	public abstract double totalPrice();
+	public double totalPrice() {
+		//some loop here utilizing array with all products in order and
+		return 0;
+	}
 
 }

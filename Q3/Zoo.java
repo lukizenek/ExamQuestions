@@ -15,18 +15,23 @@ public class Zoo {
 	public Animal getAnimal(int index) {
 		return animals.get(index);
 	}
-	public int totalNumberOfLegs(int index) {
-		return animals.get(index).getnumberOfLegs();
+	public int totalNumberOfLegs() {
+		int tNL = 0;
+		for(int i = 0; i < animals.size(); i++) {
+			tNL =+ animals.get(i).getnumberOfLegs();
+			
+		}
+		return tNL;
+		
 	}
 	public ArrayList<Mammal> allFurryMammals(){
 		ArrayList<Mammal> furryMammals = new ArrayList<Mammal>();
 		for(int i = 0 ; i < animals.size() ; i++)
 		{
-			if(animals.get(i) instanceof Mammal)
+			if(animals.get(i) instanceof Mammal && ((Mammal) animals.get(i)).hasFur())
 			{
-				Mammal mammal = (Mammal)animals.get(i);
-				if(mammal.hasFur())
-					furryMammals.add(mammal);
+				
+					furryMammals.add((Mammal) animals.get(i));
 			}
 		}
 		return furryMammals;

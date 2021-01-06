@@ -5,10 +5,9 @@ public class CreditcardAccount extends Account{
 	
 
 	public void deposit(double amount, Date depositedDate) {
-		this.deposit(amount, depositedDate);
+		
 	}
 	public CreditCard getCreditCard() {
-		creditCard = creditCard.copy();
-		return creditCard;
+		return this.creditCard.copy();
 	}
 }

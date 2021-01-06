@@ -4,11 +4,11 @@ public class Loan extends Account{
 	private double initialAmount;
 	
 	public void deposit(double amount, Date depositedDate) {
-		if(amount < 0) {
-			System.out.println("You cannot withdraw from the loan");
+		if(amount > 0) {
+			initialAmount += amount;
 		}
 		else {
-			initialAmount += amount;
+			System.out.println("You cannot withdraw from the loan");
 		}
 	}
 }

@@ -1,9 +1,10 @@
 
 public class Course {
-	private char[] code;
+	private char[] code = new char[size];
+	int size;
 	
 	public Course(char[] code, int maxNoStudentSeatsavailable, Teacher teacher) {
-		this.code = code;
+		this.code.push(code);
 	}
 	
 	public char[] getCode() {

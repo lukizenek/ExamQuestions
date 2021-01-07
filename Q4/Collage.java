@@ -3,7 +3,7 @@ public class Collage {
 	private String name;
 	
 	public Course getCourseByCode(char[] code) {
-		
+		//maybe swiutch
 	}
 	private boolean codeCheck(char[] code1, char[] code2) {
 		boolean arraysEq = true;

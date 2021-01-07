@@ -5,7 +5,9 @@ public class CreditcardAccount extends Account{
 	
 
 	public void deposit(double amount, Date depositedDate) {
-		
+		 if(amount >= (creditLimit*(-1))) {
+			 new Deposit(amount, depositedDate);
+		 }
 	}
 	public CreditCard getCreditCard() {
 		return this.creditCard.copy();

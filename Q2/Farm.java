@@ -15,5 +15,8 @@ public class Farm {
 		}
 		return tSize;
 	}
+	public double totalGrassYield() {
+		  fields.get(0).
+	}
 
 }
